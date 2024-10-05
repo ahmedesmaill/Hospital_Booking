@@ -1,0 +1,45 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<div id="alert" class="alert alert-success alert-dismissible" style="display: none;">
+    <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+     Your appointment has been successfully completed. Thank you!
+</div>
+
+﻿<div class="row">
+   
+        <div class="col-12 mb-3">
+            <h2><i class="bi bi-arrow-left"></i> Complete Appointment with @Model.Name </h2>
+        </div>
+   
+</div>
+
+<div class="row">
+    <form action="" method="post" id="appointmentForm">
+        <div class="mb-3">
+            <label for="examplePatientName" class="form-label">Patient Name</label>
+            <input type="text" class="form-control" id="examplePatientName" name="Name" required>
+
+            <label for="exampleAppointmentDate" class="form-label">Appointment Date</label>
+            <input type="date" class="form-control" id="exampleAppointmentDate" name="Date" required>
+
+            <label for="exampleAppointmentTime" class="form-label">Appointment Time</label>
+            <input type="time" class="form-control" id="exampleAppointmentTime" name="Time">
+        </div>
+        <button  type="submit" class="btn btn-primary">Complete Appointment</button>
+
+
+
+
+     
+
+        
+    </form>
+
+</div>
+
+
+
